@@ -1,0 +1,161 @@
+body{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_parent
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ align-content: space-around;
+ cursor:pointer;
+}
+.parent_div{
+  width:50%;
+  height:10%;
+  margin: 50px auto;
+position:relative;
+
+}
+.child_div1{
+  width:25%;
+  height:100%;
+  padding-top:30px;
+}
+#task{
+  font-weight:900;
+  font-size:32px;
+}
+#list
+{
+  font-size: 32px;
+  margin-left:10px;
+  opacity:0.5;
+}
+.child_div2
+{
+  width:30%;
+  height:100%;
+  padding-top: 40px;
+  position:absolute;
+  top:0px;
+  right:0px;
+}
+
+#add{
+  position:absolute;
+  width:80%;
+  height:100%;
+  font-size:25px;
+  opacity:0.8;
+  padding-left:10px;
+  display: inline-block;
+}
+
+#circle{
+  color:red;
+  font-size: 25px;
+}
+
+.card1{
+  /* margin-top:20px; */
+  border:2px solid red;
+  height:50%;
+  width:25%;
+  /* width:22%; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 9px 0px #949494;
+  margin-top:50px;
+  height:350px;
+  /* padding: 20px; */
+  margin:20px auto;
+  text-align: center;
+}
+
+.d1{
+  margin: auto;
+  color:red;
+  font-size: 25px;
+  margin-bottom: -10px;
+  margin-top:20px;
+}
+hr{
+  width: 70%;
+  color:rgba(0, 0, 0, 0.144);
+}
+.d2{
+  color:red;
+  margin-top:30px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.d3{
+  font-size:18px;
+  margin-top:30px;
+  margin-left:20px;
+  text-align: left;
+}
+
+.page_blur{
+  filter:blur(6px);
+  -webkit-filter: blur(6px);
+}
+
+.pop_up{
+  position: absolute;
+  text-align: center;
+  width:20%;
+  padding-bottom: 20px;
+  border:2px solid red;
+  border-radius: 10px;
+  box-shadow: 5px 5px 9px 0px #949494;
+  top:30%;
+  right: 37%;
+  background-color: white;
+}
+
+#pop_p{
+  color:red;
+  font-size: 22px;
+}
+#txt_input{
+  border: 1px solid red;
+  line-height:30px;
+  width:80%;
+  border-radius: 5px;
+}
+
+#btn{
+  font-size: 16px;
+  background-color: #fc5a5a;
+  border-radius: 20px;
+  width:25%;
+  border:1px solid #fc5a5a;
+  padding: 10px;
+}
+@media(max-width:600px) {
+  .parent_div {
+    width: 80%;
+  }
+  .card1{
+    width:60%;
+  }
+  .child_div1 {
+    width: 45%;
+  }
+  .child_div2 {
+    width: 10%;
+  }
+  #add{
+    display: none;
+}
+.pop_up{
+  width: 50% !important;
+  right: 22% !important;
+}
+}
